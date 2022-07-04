@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/credit-card-practice/static/css/main.d2072a33.css",
-    "main.js": "/credit-card-practice/static/js/main.f746faf8.js",
+    "main.js": "/credit-card-practice/static/js/main.f27212c0.js",
     "index.html": "/credit-card-practice/index.html",
     "main.d2072a33.css.map": "/credit-card-practice/static/css/main.d2072a33.css.map",
-    "main.f746faf8.js.map": "/credit-card-practice/static/js/main.f746faf8.js.map"
+    "main.f27212c0.js.map": "/credit-card-practice/static/js/main.f27212c0.js.map"
   },
   "entrypoints": [
     "static/css/main.d2072a33.css",
-    "static/js/main.f746faf8.js"
+    "static/js/main.f27212c0.js"
   ]
 }
