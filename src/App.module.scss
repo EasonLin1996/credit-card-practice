@@ -1,0 +1,65 @@
+.App {
+  height: 100%;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: inherit;
+  margin: 0;
+  border: 0;
+  color: inherit;
+  font-size: inherit;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+:global {
+  html,
+  body {
+    margin: 0;
+    height: 100vh;
+    font-size: 16px;
+
+    @media screen and (max-width: 480px) {
+      font-size: 12px;
+    }
+  }
+  ul,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .slide-up-enter {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  .slide-up-enter-active {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.1s;
+  }
+  .slide-up-exit {
+    opacity: 1;
+    // position: relative;
+  }
+  .slide-up-exit-active {
+    opacity: 0;
+    transform: translateY(-15px);
+    pointer-events: none;
+  }
+
+  .slide-up-enter-active,
+  .slide-up-exit-active {
+    transition: all 0.25s ease-in-out;
+  }
+}

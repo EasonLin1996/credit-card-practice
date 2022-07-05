@@ -1,24 +1,30 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "noImplicitAny": false, //不用聲明any類型，可以js 跟 ts混寫
+    "target": "es5", //目標編譯後版本
     "lib": [
-      "dom",
+      "dom", // 可以使用document.getelementbyid
       "dom.iterable",
       "esnext"
     ],
-    "allowJs": true,
+    "allowJs": true, //允許混合編譯JS
     "skipLibCheck": true,
-    "esModuleInterop": true,
+    "esModuleInterop": true, //允許使用commentjs的方式import文件
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
-    "moduleResolution": "node",
+    "module": "esnext", // 配置code的模塊系統
+    "moduleResolution": "node", // 決定了編譯器的工作方式
     "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+    "isolatedModules": false, //每個文件作為單獨模塊
+    "noEmit": true, //發生錯誤時 不要生成js代碼
+    "jsx": "react-jsx", // 允許編輯器編輯react代碼
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules"
+      }
+    ]
   },
   "include": [
     "src"
